@@ -1,0 +1,105 @@
+<!-- Font Awesome Glyphicons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<!-- wrapper -->
+<div class="container text-center">
+
+	<!-- row 1 - burger image -->
+	<div class="row">
+		<!-- column -->
+		<div class="col-md-12 text-center">
+			<!-- image -->
+			<img src="/assets/images/pinkishBurger.png" width="200" height="200" />
+			<!-- end column -->
+		</div>
+		<!-- end row 1 -->
+	</div>
+
+	<!-- row 2 - EAT-DA-BURGER HEADING -->
+	<div class="row">
+		<!-- column -->
+		<div class="col-md-12 text-center">
+			<!-- heading -->
+			<h1>Eat-Da-Burger!</h1>
+			<!-- end column -->
+		</div>
+		<!-- end row 2 -->
+	</div>
+
+	<!-- row 3 - burgers display-->
+	<div class="row">
+		<!-- column 1 - burgers chosen -->
+		<div class="col-md-6 text-center">
+
+			<h2>Burgers!</h2>
+
+			<ol>
+				{{#each burgers}} {{#unless this.devoured}}
+				<li>
+					<h3>
+						{{this.burger_name}}
+
+						<form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+							<input type="hidden" name="devoured" value="true">
+							<button type="submit" class="btn btn-primary">Devour it!</button>
+						</form>
+					</h3>
+				</li>
+				{{/unless}} {{/each}}
+			</ol>
+			<!-- end column 1 -->
+		</div>
+
+		<!-- column 2 - DEVOURED BURGERS -->
+		<div class="col-md-6 text-center">
+
+			<h2>Devoured Burgers!</h2>
+
+			<ol>
+				{{#each burgers}} {{#if this.devoured}}
+				<li>
+					<h3>
+						{{this.burger_name}}
+						<h3>
+
+							{{> burgers/delete-burger}}
+
+				</li>
+				{{/if}} {{/each}}
+			</ol>
+			<!-- end column 2 -->
+		</div>
+
+		<!-- end row 3 -->
+	</div>
+
+	<!-- row 4 - choose a burger & submit button -->
+	<div class="row">
+		<!-- column -->
+		<div class="col-md-12 text-center">
+			<h1>Choose a Burger</h1>
+			<form class="create-update-form" action="burgers/create" method="POST">
+
+				<div class="form-group">
+					<label for="burger">Your Burger Choice:</label>
+					<input type="text" id="burger" name="name">
+				</div>
+
+				<button type="submit" class="btn btn-primary">Add the Burger</button>
+			</form>
+			<!-- end column -->
+		</div>
+		<!-- end row 4 -->
+	</div>
+
+	<hr>
+	<footer class="footer">
+		<div class="container">
+			<p>
+				<a href="https://burgerhandlebars.herokuapp.com/" id="hp">Refresh</a> |
+				<a href="https://github.com/angelyna/burger">My GitHub Repo</a>
+			</p>
+		</div>
+	</footer>
+	<!-- end wrapper -->
+</div>

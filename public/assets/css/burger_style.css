@@ -1,0 +1,37 @@
+h1 {
+	color: rgb(228, 8, 144);
+}
+
+h2 {
+	color:rgb(13, 102, 153);
+}
+
+/* h3 {
+	color: rgb(230, 40, 157);
+} */
+
+body {
+	background-image: url('/assets/images/rainbow.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+  .container{
+	margin-top: 5%;
+	margin-bottom: 2%;
+	width: 80%;
+  }
+
+  .btn{
+	  background-color: rgb(201, 172, 42);
+  }
+
+  .form-group{
+	  color: rgb(212, 199, 7);
+	  font-size: 2.5vh;
+  }
+
+  ol li h2, h3{
+	color: rgb(230, 40, 157);
+	}
