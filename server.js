@@ -29,7 +29,8 @@ var router = require('./controllers/burgers_controller.js');
 app.use('/', router);
 
 
-// DEFINE PORT AND START SERVER LISTEN
-var PORT = 8000;
-app.listen(process.env.PORT || PORT);
-console.log("Local host:" + PORT);
+//Create the port and start app listening 
+var PORT = process.env.PORT || 8000;
+app.listen(PORT, function(){
+console.log("App listening on PORT:" + PORT);
+});
