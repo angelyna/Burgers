@@ -53,9 +53,8 @@ router.delete('/burgers/delete/:id', function (req, res) {
 });
 
 app.listen(PORT, function(){
+	console.log("Application is running on PORT %s", PORT);
+});
 	
-	
-	
-
 // Export router
 module.exports = router;
