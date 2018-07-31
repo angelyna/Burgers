@@ -6,7 +6,7 @@ A restaurant app where users input the names of burgers they'd like to eat, buil
 * ORM to convert data,
 * MVC design pattern to separate application's concerns.
 
-Deployed in HEROKU @ https://burgerhandlebars.herokuapp.com
+Deployed in HEROKU @ https://myburgersapp.herokuapp.com
 
 ### Highlights
 
