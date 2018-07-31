@@ -10,7 +10,7 @@ var methodOverride = require('method-override');
 var app = express();
 
 //Create the port and start app listening 
-var PORT = process.env.NODE_ENV || 8000;
+var PORT = process.env.PORT || 8000;
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() + '/public'));
