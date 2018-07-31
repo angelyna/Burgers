@@ -2,13 +2,8 @@
 var burger = require('../models/burger.js');
 var express = require('express');
 
-
 // Create app router
 var router = express.Router();
-
-//Create connection to the NODE ENV
-
-var PORT = process.env.NODE_ENV || 8000;
 
 // GET - selectAll
 router.get('/', function (req, res) {
@@ -50,10 +45,6 @@ router.delete('/burgers/delete/:id', function (req, res) {
 	burger.deleteOne(condition, function () {
 		res.redirect('/burgers');
 	});
-});
-
-app.listen(PORT, function(){
-	console.log("Application is running on PORT %s", PORT);
 });
 	
 // Export router
