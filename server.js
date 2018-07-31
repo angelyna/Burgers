@@ -6,9 +6,11 @@ var mysql = require('mysql');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
-
 // SetUp EXPRESS server
 var app = express();
+
+//Create the port and start app listening 
+var PORT = process.env.PORT || 8000;
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() + '/public'));
@@ -28,9 +30,6 @@ app.set('view engine', 'handlebars');
 var router = require('./controllers/burgers_controller.js');
 app.use('/', router);
 
-
-//Create the port and start app listening 
-var PORT = process.env.PORT || 8000;
 app.listen(PORT, function(){
 console.log("App listening on PORT:" + PORT);
 });
