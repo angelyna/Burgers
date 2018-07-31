@@ -12,21 +12,21 @@ Deployed in HEROKU @ https://burgerhandlebars.herokuapp.com
 
 * Eat Da Burger -simply called the burger app- is a restaurant app that lets users input the names of burgers they'd like to eat. 
 
-![pic1|50x25](public/assets/images/pic1.png)
+![pic1](public/assets/images/pic1.png)
 
 * Whenever a user submits a burger's name, the app displays the burger on the left side of the page, waiting to be devoured.
 
-![pic2|50x25](public/assets/images/pic2.png)
+![pic2](public/assets/images/pic2.png)
 
-![pic3|50x25](public/assets/images/pic3.png)
+![pic3](public/assets/images/pic3.png)
 
 * Each burger in the waiting area has a `Devour it!` button. When the user clicks it, the burger moves to the right side of the page.
 
-![pic4|50x25](public/assets/images/pic4.png)
+![pic4](public/assets/images/pic4.png)
 
 * Each burger in the devoured area has a `Savor this burger!` button. When the user clicks it, the burger is completely digested, being deleted from the page.
 
-![pic5|50x25](public/assets/images/pic5.png)
+![pic5](public/assets/images/pic5.png)
 
 ### Key Concepts
 
