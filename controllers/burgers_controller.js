@@ -52,5 +52,10 @@ router.delete('/burgers/delete/:id', function (req, res) {
 	});
 });
 
+app.listen(PORT, function(){
+	
+	
+	
+
 // Export router
 module.exports = router;
