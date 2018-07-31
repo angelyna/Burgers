@@ -1,13 +1,20 @@
 // create the connection to mysql db titled 'burger_db' 
 var mysql = require('mysql');
 
-var connection = mysql.createConnection({
+var connection;
+if (process.env.JAWSDB_URL) {
+  //HEROKU deployment
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    //local host 
+  connection = mysql.createConnection({
   port: 3306,
   host: 'localhost',
   user: 'root',
   password: 'password',
   database: 'burger_db'
 });
+};
 
 // make connection happen.
 connection.connect(function(err) {
