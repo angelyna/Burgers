@@ -6,6 +6,10 @@ var express = require('express');
 // Create app router
 var router = express.Router();
 
+//Create connection to the NODE ENV
+
+var PORT = process.env.NODE_ENV || 8000;
+
 // GET - selectAll
 router.get('/', function (req, res) {
 	res.redirect('/burgers');
