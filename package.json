@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node server.js"
+    "start": "node burgers_controller.js"
   },
   "name": "burger",
   "version": "1.0.0",
