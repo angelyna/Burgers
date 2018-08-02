@@ -39,7 +39,7 @@ This is a `one single page` app that stores every burger in a database, whether 
 * express NPM Package - https://www.npmjs.com/package/express
 * express-handlebars (Handlebars view engine for Express) - https://www.npmjs.com/package/express-handlebars
 * nodemon - https://www.npmjs.com/package/nodemon
-* MySql database 
+* MySQL database 
 * method-override - https://www.npmjs.com/package/method-override
 
 In your terminal run node server, which shall return the PORT: 8000. Then, run the app in your local browser @ http://localhost:8000/ . Alternatively, play this app in HEROKU: https://burgerhandlebars.herokuapp.com/ .
