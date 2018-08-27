@@ -30,7 +30,7 @@ Deployed in HEROKU @ https://myburgersapp.herokuapp.com
 
 ### Key Concepts
 
-This is a `one single page` app that stores every burger in a database, whether devoured or not. The burgers are deleted from the database when the burger is savored - when the user hits the `Savor this button!` button.
+This is a `one single page` app that stores every burger in a MySQL database, whether devoured or not. The burgers are deleted from the database when the burger is savored - when the user hits the `Savor this button!` button.
 
 ##### The app requires node.JS, including npm dependencies:
 
